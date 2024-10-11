@@ -1,0 +1,33 @@
+.cart {
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Make sure it's above other elements */
+}
+
+.cart h2 {
+    margin: 0;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart li {
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
