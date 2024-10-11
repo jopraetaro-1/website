@@ -1,0 +1,13 @@
+version: '3.8'  # Adjust this version if needed
+
+services:
+  nextjs:
+    build:
+      context: .  # This should point to the directory containing your Dockerfile
+      dockerfile: Dockerfile  # Explicitly specify the Dockerfile if not named "Dockerfile"
+    ports:
+      - "3000:3000"  # Map port 3000 on the host to port 3000 in the container
+    volumes:
+      - .:/src  # Mount current directory to /src in the container
+    environment:
+      - NODE_ENV=production  # Set the Node environment to production
